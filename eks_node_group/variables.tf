@@ -8,32 +8,27 @@ variable "environment" {
   description = "Infrastructure environment"
 }
 
-variable "account_id" {
-  type        = string
-  description = "AWS account id"
-}
-
 variable "default_tags" {
   type        = map(string)
   description = "Default tags for resources"
 }
 
-variable "name" {
+variable "cluster_name" {
   type        = string
   description = "Name of the EKS cluster"
 }
 
-variable "version" {
+variable "name" {
   type        = string
-  description = "Version of the EKS cluster"
+  description = "Name of the EKS node group"
 }
 
 variable "subnet_ids" {
   type        = list(string)
-  description = "Subnet IDs for the EKS cluster"
+  description = "Subnet IDs for this node group"
 }
 
-variable "log_retention_days" {
-  type        = number
-  description = "Number of days to retain logs"
+variable "secrets_name_prefix" {
+  type        = string
+  description = "Prefix for the secrets name"
 }
