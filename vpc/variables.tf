@@ -8,14 +8,14 @@ variable "default_tags" {
   description = "Default tags for resources"
 }
 
-variable "vpc_name" {
+variable "name" {
   type        = string
   description = "Name of the VPC"
 
   validation {
     condition = (
-      length(var.vpc_name) > 0 &&
-      length(var.vpc_name) < 11
+      length(var.name) > 0 &&
+      length(var.name) < 11
     )
     error_message = "VPC name must be between 1 and 10 characters"
   }

@@ -6,20 +6,20 @@ resource "aws_vpc" "vpc" {
   tags = merge(
     var.default_tags,
     {
-      Name = "${var.environment}-${var.vpc_name}"
+      Name = "${var.environment}-${var.name}"
     }
   )
 }
 
 resource "aws_security_group" "default" {
-  name        = "${var.environment}-vpc-${var.vpc_name}"
+  name        = "${var.environment}-vpc-${var.name}"
   description = "Default security group for vpc"
   vpc_id      = aws_vpc.vpc.id
 
   tags = merge(
     var.default_tags,
     {
-      Name = "${var.environment}-vpc-${var.vpc_name}"
+      Name = "${var.environment}-vpc-${var.name}"
     }
   )
 }
