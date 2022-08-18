@@ -91,14 +91,14 @@ resource "aws_iam_role_policy_attachment" "worker_secretmanager" {
 
 data "aws_iam_policy_document" "worker_secretmanager" {
   statement {
-    effect  = "Allow"
+    effect = "Allow"
     actions = [
-        "secretsmanager:DescribeSecret",
-        "secretsmanager:GetSecretValue",
-        "secretsmanager:ListSecrets"
-        ]
+      "secretsmanager:DescribeSecret",
+      "secretsmanager:GetSecretValue",
+      "secretsmanager:ListSecrets"
+    ]
     resources = [
-      "arn:aws:secretsmanager:${var.region}:${var.account_id}:secret:${var.secrets_name_prefix}*"
-        ]
+      "arn:aws:secretsmanager:${var.aws_region}:${var.account_id}:secret:${var.secrets_name_prefix}*"
+    ]
   }
 }
