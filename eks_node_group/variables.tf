@@ -1,4 +1,4 @@
-variable "region" {
+variable "aws_region" {
   type        = string
   description = "AWS region"
 }
@@ -6,6 +6,11 @@ variable "region" {
 variable "environment" {
   type        = string
   description = "Infrastructure environment"
+}
+
+variable "aws_account_id" {
+  type        = string
+  description = "AWS account id"
 }
 
 variable "default_tags" {
