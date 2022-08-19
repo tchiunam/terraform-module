@@ -1,4 +1,18 @@
 # Terraform Module
+#### Release
+<div align="left">
+  <a href="https://github.com/tchiunam/terraform-module/releases">
+    <img alt="Version" src="https://img.shields.io/github/v/release/tchiunam/terraform-module?sort=semver" />
+  </a>
+  <a href="https://github.com/tchiunam/terraform-module/releases">
+    <img alt="Release Date" src="https://img.shields.io/github/release-date/tchiunam/terraform-module" />
+  </a>
+  <img alt="Language" src="https://img.shields.io/github/languages/count/tchiunam/terraform-module" />
+  <img alt="Lines of Code" src="https://img.shields.io/tokei/lines/github/tchiunam/terraform-module" />
+  <img alt="File Count" src="https://img.shields.io/github/directory-file-count/tchiunam/terraform-module" />
+  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/tchiunam/terraform-module.svg?label=Repo%20size" />
+</div>
+
 #### Activity
 <div align="left">
   <a href="https://github.com/tchiunam/terraform-module/commits/main">
