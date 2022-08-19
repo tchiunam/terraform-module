@@ -8,7 +8,7 @@ variable "environment" {
   description = "Infrastructure environment"
 }
 
-variable "account_id" {
+variable "aws_account_id" {
   type        = string
   description = "AWS account id"
 }

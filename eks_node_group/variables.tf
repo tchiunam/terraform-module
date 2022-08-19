@@ -8,6 +8,11 @@ variable "environment" {
   description = "Infrastructure environment"
 }
 
+variable "aws_account_id" {
+  type        = string
+  description = "AWS account id"
+}
+
 variable "default_tags" {
   type        = map(string)
   description = "Default tags for resources"

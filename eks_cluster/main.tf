@@ -139,7 +139,7 @@ data "aws_iam_policy_document" "eks_cloudwatch" {
       "logs:PutLogEvents",
       "logs:PutRetentionPolicy"
     ]
-    resources = ["arn:aws:logs:${var.aws_region}:${var.account_id}:log-group:/aws/eks/${var.environment}-${var.name}/cluster"]
+    resources = ["arn:aws:logs:${var.aws_region}:${var.aws_account_id}:log-group:/aws/eks/${var.environment}-${var.name}/cluster"]
   }
 
   statement {
@@ -147,6 +147,6 @@ data "aws_iam_policy_document" "eks_cloudwatch" {
     actions = [
       "logs:DescribeLogGroups"
     ]
-    resources = ["arn:aws:logs:${var.aws_region}:${var.account_id}:log-group:*"]
+    resources = ["arn:aws:logs:${var.aws_region}:${var.aws_account_id}:log-group:*"]
   }
 }
