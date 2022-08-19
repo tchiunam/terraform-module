@@ -98,7 +98,7 @@ data "aws_iam_policy_document" "worker_secretmanager" {
       "secretsmanager:ListSecrets"
     ]
     resources = [
-      "arn:aws:secretsmanager:${var.aws_region}:${var.account_id}:secret:${var.secrets_name_prefix}*"
+      "arn:aws:secretsmanager:${var.aws_region}:${var.aws_account_id}:secret:${var.secrets_name_prefix}*"
     ]
   }
 }
